@@ -86,3 +86,51 @@ button:hover {
     text-align: center;
     border: 1px solid #ddd;
 }
+
+
+
+@media (max-width: 380px) and (max-height: 780px) {
+    .main-container {
+        /* Adjustments for the main container */
+        padding: 10px;
+    }
+
+    .display-container {
+        /* Adjustments for the display container */
+        font-size: 1.5em; /* Example: Make the text larger */
+        text-align: center;
+    }
+
+    .stopwatch-wrapper {
+        /* Adjustments for the stopwatch wrapper */
+        padding: 10px;
+    }
+
+    .stopwatch-container {
+        /* Adjustments for the stopwatch container */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons {
+        /* Adjustments for the button container */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .buttons button {
+        /* Adjustments for individual buttons */
+        width: 80px; /* Example: Set a fixed width */
+        margin: 5px; /* Example: Margin around buttons */
+    }
+
+    #laps {
+        /* Adjustments for the laps container */
+        max-height: 200px; /* Example: Limit the height of laps list */
+        overflow-y: auto;
+        width: 100%;
+    }
+}
