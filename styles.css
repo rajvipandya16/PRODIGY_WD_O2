@@ -1,11 +1,7 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
+    background-color: #1c1c1c; /* Dark background */
+    color: #ffffff; /* White text color */
+    font-family: 'Arial', sans-serif; /* Default font */
 }
 
 .main-container {
@@ -18,13 +14,14 @@ body {
 .display-container {
     width: 350px;
     height: 350px;
-    background-color: #806A6A;
-    color: #EFEAEA;
+    background: radial-gradient(circle, rgba(28,28,28,1) 0%, rgba(44,44,44,1) 100%);
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
 }
 
 #display {
@@ -34,9 +31,10 @@ body {
 .stopwatch-wrapper {
     width: 100%;
     max-width: 600px;
-    padding: 20px;
-    background-color: #EFEAEA;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    padding-top: 20px;
+    padding: 30px;
+    background-color: #1a1a1a;
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.5);
     border-radius: 10px;
 }
 
@@ -50,20 +48,25 @@ body {
 }
 
 button {
-    margin: 5px;
+    background-color: #1c1c1c; /* Dark background for buttons */
+    border: 2px solid #00ffff; /* Cyan border */
+    color: #00ffff; /* Cyan text */
+    font-size: 16px;
     padding: 10px 20px;
-    font-size: 1em;
+    margin: 10px;
+    border-radius: 25px; /* Rounded corners */
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #806A6A;
-    color: #EFEAEA;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
 }
 
 button:hover {
-    background-color: #B9ABAB;
-    color: #806A6A;
+    background-color: #00ffff; /* Cyan background on hover */
+    color: #1c1c1c; /* Dark text on hover */
+}
+
+button:active {
+    background-color: #007777; /* Darker cyan when pressed */
+    border-color: #007777;
 }
 
 #laps {
@@ -71,7 +74,7 @@ button:hover {
     padding: 0;
     max-height: 200px;
     overflow-y: auto;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #1c1c1c;
     margin-top: 20px;
     width: 600px;
     align-items: center;
@@ -80,11 +83,13 @@ button:hover {
 #laps li {
     padding: 10px;
     margin: 5px 0;
-    background-color: #806A6A;
-    color: #EFEAEA;
+    background-color: #1c1c1c;
+    color: #007777;
     border-radius: 20px;
     text-align: center;
-    border: 1px solid #ddd;
+    text-shadow: #007777;
+    border: 2px solid #00ffff;
+    cursor: pointer;
 }
 
 
